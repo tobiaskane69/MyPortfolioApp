@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">MyPortfolioApp</string>
+    <string name="your_info">Your Info:</string>
+    <string name="save">SAVE</string>
+    <string name="phone_number">Phone Number:</string>
+    <string name="address">Address:</string>
+    <string name="skills">Skills:</string>
+    <string name="age">Age:</string>
+    <string name="name">Name:</string>
+    <string name="personal_information">Personal Information</string>
 </resources>

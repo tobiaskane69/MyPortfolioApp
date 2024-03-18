@@ -7,20 +7,12 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-
-        android:alpha="0.3"/>
-
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:alpha="0.8"
         app:cardCornerRadius="28dp"
-
-
         >
 
         <LinearLayout
@@ -35,7 +27,7 @@
             <TextView
                 android:layout_width="349dp"
                 android:layout_height="wrap_content"
-                android:text="Personal Information"
+                android:text="@string/personal_information"
                 android:textColor="@color/black"
                 android:textSize="35sp"
                 android:textStyle="bold" />
@@ -47,7 +39,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Name:"
+                android:text="@string/name"
                 android:textSize="20sp"
                 android:textStyle="bold"
                 android:textColor="@color/black"
@@ -56,15 +48,16 @@
                 />
 
             <EditText
+                android:id="@+id/nameInput"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="text"
-                android:id="@+id/nameInput"/>
+                tools:ignore="LabelFor" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Age:"
+                android:text="@string/age"
                 android:textSize="20sp"
                 android:textStyle="bold"
                 android:textColor="@color/black"
@@ -76,12 +69,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="number"
-                android:id="@+id/ageInput"/>
+                android:id="@+id/ageInput"
+                tools:ignore="Autofill,LabelFor" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Skills:"
+                android:text="@string/skills"
                 android:textSize="20sp"
                 android:textStyle="bold"
                 android:textColor="@color/black"
@@ -94,12 +88,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="text"
-                android:autofillHints="" />
+                android:autofillHints=""
+                tools:ignore="LabelFor" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Address:"
+                android:text="@string/address"
                 android:textSize="20sp"
                 android:textStyle="bold"
                 android:textColor="@color/black"
@@ -111,12 +106,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textEmailAddress"
-                android:id="@+id/emailInput"/>
+                android:id="@+id/emailInput"
+                tools:ignore="Autofill,LabelFor" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Phone Number:"
+                android:text="@string/phone_number"
                 android:textSize="20sp"
                 android:textStyle="bold"
                 android:textColor="@color/black"
@@ -127,8 +123,9 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="number"
-                android:id="@+id/phoneInput"/>
+                android:inputType="phone|text"
+                android:id="@+id/phoneInput"
+                tools:ignore="Autofill,LabelFor" />
 
 
 
@@ -140,7 +137,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:onClick="handleText"
-                android:text="SAVE"
+                android:text="@string/save"
                 android:textSize="15sp"
                 android:textStyle="bold" />
 
@@ -154,7 +151,7 @@
                 android:layout_width="355dp"
                 android:layout_height="150dp"
                 android:alpha="0.8"
-                android:text="Your Info:"
+                android:text="@string/your_info"
                 android:textColor="@color/black"
                 android:textSize="20sp"
                 android:textStyle="bold"
