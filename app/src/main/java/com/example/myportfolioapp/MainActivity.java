@@ -49,6 +49,6 @@ public class MainActivity extends AppCompatActivity {
         input_age = findViewById(R.id.ageInput);
         input_address = findViewById(R.id.emailInput);
         input_phone = findViewById(R.id.phoneInput);
-        user_output.setText("NAME: " + input_name.getText() + "\nAGE: " + input_age.getText() + " years old. \nADDRESS: " + input_skills.getText() + "\nEMAIL: " + input_address.getText() + "\nPHONE #: " + input_phone.getText());
+        user_output.setText("Name: " + input_name.getText() + "\nAge: " + input_age.getText() + " \nSkills: " + input_skills.getText() + "\nAddress: " + input_address.getText() + "\nPhone Number: " + input_phone.getText());
     }
 }
